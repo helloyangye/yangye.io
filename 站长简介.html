@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zhanzhang</title>
+    <link type="text/css" rel="stylesheet" href="站长简介.css">
+    <!--样式设置-->
+    <style>
+        script {
+            color: rgb(140, 15, 15);
+        }
+    </style>
+    <!--时钟显示-->
+    <script>
+        function showTime() {
+            var time = new Date();
+            var day = time.getDay();
+            var date = time.getDate();
+            var year = time.getFullYear();
+            var month = time.getMonth() + 1;
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+            var day1 = day.toString();
+            var nianyue = year + "年" + "&nbsp" + month + "月";
+            var mytime = hour + ":" + minute + ":" + second;
+            // document.getElementById("xinqi").innerHTML = day1;
+            document.getElementById("ri").innerHTML = date;
+            document.getElementById("nianyue").innerHTML = nianyue;
+            document.getElementById("tt").innerHTML = mytime;
+            setTimeout("showTime()", 1000);
+        }
+    </script>
+</head>
+ 
+<body>
+    <div class="navbar">
+        <a href="javascript:void(0);" onclick="goToTargetPage()">首页</a>
+        <a href="#news"><button onclick="openWebsite()">新闻资讯</button>  </a>
+        <a href="#contact"><button onclick="openModal()">联系我们</button>  </a>
+        <a href="#about"><button onclick="openModal2()">关于我们</button> </a>
+      </div>
+	  
+	  <div id="myModal" class="modal">
+	    <div class="modal-content">  
+	      <h2>联系电话和邮箱</h2>  
+	      <p>电话：123-456-7890</p>  
+	      <p>邮箱：[example@example.com](mailto:example@example.com)</p>  
+	      <button onclick="closeModal()">关闭</button>  
+	    </div>  
+	  </div>  
+	  
+	  <div id="myModal2" class="modal2">  
+	      <div class="modal-content2">  
+	        <h2>Firefox Browser</h2>  
+	        <p>Firefox是最Firefox帮助公开且人人可用。</p>  
+	        <p>想支持我们吗？向我们捐款或者参与进来！</p>  
+	        <a href="https://donate.mozilla.org/en-US/?amount=10&amp;currency=USD&amp;desc=Firefox+Browser&amp;akid=CLFGRPOXUCDRNFE2B5G2AUSAHQ6Z7WQN7U&amp;zip=1234567890">捐款</a>  
+	        <p>许可信息最终用户权利隐私政策</p>  
+	        <button onclick="closeModal2()">关闭</button>  
+	      </div>  
+	    </div>  
+		
+	  <script>
+	      function openModal() {
+	      	    document.getElementById("myModal").style.display = "block";  
+	      	  }  
+	      	  function closeModal() {  
+	      	    document.getElementById("myModal").style.display = "none";  
+	      	  }  
+	      	  
+	      	  function openModal2() {
+	      	    document.getElementById("myModal2").style.display = "block";  
+	      	  }    
+	      	  function closeModal2() {  
+	      	    document.getElementById("myModal2").style.display = "none";  
+	      	  }  
+	      	  
+	      	  function openWebsite() {  
+	      	        window.open('http://news.ha101.cn/pc.html', '_blank');  
+	      	  }  
+	      function goToTargetPage() {  
+	        window.location.href="我的家乡.html#"; // 替换为你要返回的页面的URL  
+	      }  
+	    </script>
+    <div class="header">
+        <!--头部-->
+        <img id="hi1" src="摄影.jpg">
+    </div>
+ 
+    <div class="dh">
+        <!--导航栏 -->
+        <ul>
+            <li><a href="我的家乡.html#">首页</a></li>
+            <li><a href="家乡简介.html#">家乡简介</a></li>
+            <li><a href="风景名胜.html#">风景名胜</a></li>
+            <li><a href="美食特色.html#">美食特色</a></li>
+            <li><a href="站长简介.html#">站长简介</a></li>
+            <li><a href="在线调查.html#">在线调查</a></li>
+        </ul>
+    </div>
+    <!--主体-->
+    <div id="zhuti">
+        <div id="left">
+            <!--主体左边-->
+            <table border="1">
+                <tr>
+                    <th>
+                        <div id="geqian"><!--个签-->
+                            <h2>
+                                <pre> 年轻是我们唯一有权利
+ 去编织梦想的时光
+ 
+               ---李嘉诚</pre>
+                            </h2>
+                        </div>
+                        <div id="shijian"><!--时间-->
+                            <div id="ri"> 24</div>
+                            <div id="nianyue">二0二二年五月</div>
+                            <div id="tt">20:57</div>
+                            <script>
+                                showTime();
+                            </script>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="xinxi"><!--信息-->
+                            <br>
+                            <br>
+                            <br>
+ 
+                            <p>学院：计算机科学与工程学院</p>
+                            <p>专业：物联网</p>
+                            <p>班级：203</p>
+                            <P>学号：07926862</P>
+                            <p>联系方式：1893645272<br>邮箱：1276327@163.com</p>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div id="right"><!--右边-->
+            <div id="zhan1"><!--标题-->
+                <h1>站长简介</h1>
+            </div>
+            <div id="zhan2"><!--内容-->
+                <ul>
+                    <li>姓名：张三     </li>
+                    <li>性别：男</li>
+                    <li>家乡：地球</li>
+                    <li>爱好：乒乓球、追剧、看书、散步、看电影
+                        <ul id="tuijian">
+                            <li>推荐的书：
+                                <ul id="shu">
+                                    <li>《堂吉诃德》</li>
+                                    <li>《百年孤独》</li>
+                                    <li>《平凡的世界》</li>
+                                </ul>
+                            </li>
+                            <li id="zong">推荐的综艺：
+                                <ul id="zongyi">
+                                    <li>令人心动的offer</li>
+                                    <li>王牌对王牌</li>
+                                    <li>极限挑战</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="qita">其他：......</li>
+                </ul>
+            </div>
+        </div>
+ 
+    </div>
+ 
+ 
+ 
+ 
+ 
+    <div id="" class="footer">
+        <!--页尾-->
+        <img id="fi1" src="tupian/baoji1.jpg">
+        <p>
+            古城淮安 璀璨文明
+        </p>
+        <p>
+            welcome to huaian|淮安欢迎您！
+        </p>
+    </div>
+</body>
+ 
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fenjin</title>
+    <link type="text/css" rel="stylesheet" href="名胜风景.css">
+</head>
+ 
+<body>
+    <div class="navbar">
+        <a href="javascript:void(0);" onclick="goToTargetPage()">首页</a>
+        <a href="#news"><button onclick="openWebsite()">新闻资讯</button>  </a>
+        <a href="#contact"><button onclick="openModal()">联系我们</button>  </a>
+        <a href="#about"><button onclick="openModal2()">关于我们</button> </a>
+      </div>
+	  
+	  <div id="myModal" class="modal">
+	    <div class="modal-content">  
+	      <h2>联系电话和邮箱</h2>  
+	      <p>电话：123-456-7890</p>  
+	      <p>邮箱：[example@example.com](mailto:example@example.com)</p>  
+	      <button onclick="closeModal()">关闭</button>  
+	    </div>  
+	  </div>  
+	  
+	  <div id="myModal2" class="modal2">  
+	      <div class="modal-content2">  
+	        <h2>Firefox Browser</h2>  
+	        <p>Firefox是最Firefox帮助公开且人人可用。</p>  
+	        <p>想支持我们吗？向我们捐款或者参与进来！</p>  
+	        <a href="https://donate.mozilla.org/en-US/?amount=10&amp;currency=USD&amp;desc=Firefox+Browser&amp;akid=CLFGRPOXUCDRNFE2B5G2AUSAHQ6Z7WQN7U&amp;zip=1234567890">捐款</a>  
+	        <p>许可信息最终用户权利隐私政策</p>  
+	        <button onclick="closeModal2()">关闭</button>  
+	      </div>  
+	    </div>  
+	  <script>
+	      function goToTargetPage() {  
+	        window.location.href="我的家乡.html#"; // 替换为你要返回的页面的URL  
+	      }  
+		      function openModal() {  
+		        document.getElementById("myModal").style.display = "block";  
+		      }  
+		      function closeModal() {  
+		        document.getElementById("myModal").style.display = "none";  
+		      }  
+		  	
+		  	function openModal2() {
+		  	  document.getElementById("myModal2").style.display = "block";  
+		  	}    
+		  	function closeModal2() {  
+		  	  document.getElementById("myModal2").style.display = "none";  
+		  	}  
+	
+		  	function openWebsite() {  
+		  	      window.open('http://news.ha101.cn/pc.html', '_blank');  
+		  	}  
+		  	 
+	    </script>  
+    <div class="header">
+        <!--头部-->
+        <img id="hi1" src="洪泽湖古堰景区.jfif">
+    </div>
+    <div class="dh">
+        <!--导航栏 -->
+        <ul>
+            <li><a href="我的家乡.html#">首页</a></li>
+            <li><a href="家乡简介.html#">家乡简介</a></li>
+            <li><a href="风景名胜.html#">风景名胜</a></li>
+            <li><a href="美食特色.html#">美食特色</a></li>
+            <li><a href="站长简介.html#">站长简介</a></li>
+            <li><a href="在线调查.html#">在线调查</a></li>
+        </ul>
+    </div>
+    <div class="zhuti"><!--主体部分-->
+        <h2>风景名胜</h2><!--风景标题-->
+        <div id="biaoge"><!--表格-->
+            <table border="2">
+                <tr>
+                    <th>
+                        <div id="taiba"><!--太白-->
+                            <img src="洪泽湖古堰景区.jfif">
+                            <h2>洪泽湖古堰景区</h2>
+                            <p>
+                                洪泽湖古堰景区：国家4A级景区，位于中国第四大淡水湖——洪泽湖畔。景区主要包括洪泽湖大堤、水釜城、渔人湾等旅游片区，是一个融文化体验、养生休闲、大湖观光、现代游乐于一体的综合性生态文化旅游景区。
+                            </p>
+                            <span>
+                                <a href="https://baike.baidu.com/item/%E6%B4%AA%E6%B3%BD%E6%B9%96%E5%8F%A4%E5%A0%B0%E6%99%AF%E5%8C%BA/19391532">
+                                    <p>>>>
+                                    </p>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="caoyuan"><!--关山草原-->
+                            <img src="淮安府署.jfif">
+                            <h2>淮安府署</h2>
+                            <p>
+                                国家AAAA级景区，建于明洪武三年，已经历640年的风雨沧桑，是目前全国仅存的两座府署之一、全国重点文物保护单位。
+                            </p>
+                            <span>
+                                <a href="https://baike.baidu.com/item/%E6%B7%AE%E5%AE%89%E5%BA%9C%E7%BD%B2/4150708">
+                                    <p>
+                                        >>>
+                                    </p>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="jialin"><!--嘉陵江源头-->
+                            <img src="荷花荡.jfif">
+                            <h2>淮安荷花荡</h2>
+                            <p>
+                                国家4A级旅游景区，位于江苏省淮安市盱眙县城区北部，得名于米芾所题“第一山”，是国家4A级旅游景区。景区内有数十个景点：少游憩园、荷博园、荷文化体验馆、水草世界·农事体验馆、百荷园等。
+                            </p>
+                            <span>
+                                <a href="https://baike.baidu.com/item/%E8%8D%B7%E8%8A%B1%E8%8D%A1/651249">
+                                    <p>>>>
+                                    </p>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="baiyuan"><!--黄柏塬-->
+                            <img src="白马湖.jfif">
+                            <h2>淮安白马湖旅游度假区</h2>
+                            <p>
+                                国家4A级景区，位于江苏省淮安市清江浦区白马湖环湖大道1号。景区以“生态自然”为核心特质，将“一见清心”作为品牌形象定位，包含一品梅园、菊世无双、三岛奇遇记、嗨皮西提生态乐园、卡丁车竞技中心、国际房车露营基地、火星遗迹、哎呀马、全地形越野车、彩虹滑道等优质旅游体验产品。每年10月至11月举办的菊花展已成为江苏省三大菊展之一，是淮安市“最受市民欢迎景区”。
+                            </p>
+                            <span>
+                                <a href="https://baike.baidu.com/item/%E6%B7%AE%E5%AE%89%E5%B8%82%E7%99%BD%E9%A9%AC%E6%B9%96%E7%94%9F%E6%80%81%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA/63552044">
+                                    <p>>>>
+                                    </p>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="honghe"><!--红河谷-->
+                            <img src="淮安市西游乐园.jfif">
+                            <h2>淮安西游记主题乐园</h2>
+                            <p>
+                                国家4A级景区，位于江苏省淮安市清江浦区翔宇大道109号。总占地560亩，建筑面积6.6万平方米，分为9个区，分别对应《西游记》里的四大部洲、师徒四人和作者吴承恩。项目借助《西游记》蕴藏的娱乐元素，结合现代游乐设备和观演体验，设计打造33个游乐项目，以及花车巡游、闭园秀等46场氛围演绎项目，将花果山、高老庄、雷音寺等老场景用新技术多维度呈现，建成集“娱乐性、体验性、科技性”于一体的一流主题公园。
+                            </p>
+                            <span>
+                                <a href="https://baike.baidu.com/item/%E6%B7%AE%E5%AE%89%E8%A5%BF%E6%B8%B8%E4%B9%90%E5%9B%AD/58090967">
+                                    <p>>>>
+                                    </p>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="tongtian"><!--通天河国家森林公园-->
+                            <img src="明祖陵.jfif">
+                            <h2>淮安明祖陵遗址公园</h2>
+                            <p>
+                                国家3A级景区，位于江苏省淮安市盱眙县明祖陵村。明祖陵是明太祖朱元璋的高祖朱百六、曾祖朱四九、祖父朱初一三代的衣冠冢，也是其祖父的实际殁葬地。明祖陵历时28年之久才大致完备，有城墙三道，21对神道石刻，金水桥三座，殿、亭、楼、阁千间。明祖陵建造规制与神道21对石刻继承唐宋风格，是朱元璋重树中原正统儒家文化的重要载体。
+                            </p>
+                            <span>
+                                <a href="https://baike.baidu.com/item/%E6%98%8E%E7%A5%96%E9%99%B5/2057011">
+                                    <p>>>>
+                                    </p>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="jifen"><!--鸡峰山-->
+                            <img src="五岛湖.jfif">
+                            <h2>涟水五岛湖旅游区</h2>
+                            <p>
+                                国家4A级景区，位于江苏省淮安市涟水县红日大道与府前路交汇处。包括五岛湖公园、能仁寺景区、涟水县博物馆三大板块，占地面积约65.9公顷，其中水域面积约38.5公顷，陆地面积约27.4公顷，是融合人文自然、历史文化、名人文化、佛禅文化于一体的复合型旅游景区。城中有湖，湖中有岛，岛上有白鹭，景区形成了“城在水中、水在城中”的特有神韵。
+                            </p>
+                            <span><a href="https://baike.baidu.com/item/%E6%B7%AE%E5%AE%89%E5%B8%82%E6%B6%9F%E6%B0%B4%E5%8E%BF%E4%BA%94%E5%B2%9B%E6%B9%96%E6%97%85%E6%B8%B8%E5%8C%BA/63519529">
+                                    <p>>>>
+                                    </p>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="qianhu"><!--千湖国家湿地公园-->
+                            <img src="周恩来纪念馆.png">
+                            <h2>周恩来纪念馆</h2>
+                            <p>
+                                周恩来纪念馆于1988年3月兴建，1992年1月6日落成并对外开放，馆名由邓小平同志题写。1998年为纪念周恩来诞辰100周年，增建了仿北京中南海西花厅和周恩来铜像广场。2008年为纪念周恩来诞辰110周年，增建了周恩来生平业绩陈列馆。
+                            </p>
+                            <span>
+                                <a href="https://jsnews.jschina.com.cn/2021/hsxal/xsdk/js/202106/t20210627_2807127.shtml">
+                                    <p>>>>
+                                    </p>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="longmen"><!--陕西省龙门洞森林公园-->
+                            <img src="里运河.jfif">
+                            <h2>淮安里运河文化长廊</h2>
+                            <p>
+                                国家4A级景区，位于江苏省淮安市清江浦区里运河文化长廊。里运河文化长廊北起大闸口、南至堂子巷，总范围45平方公里，核心区总长度15.6公里，面积约10.8平方公里，大小项目数百个，总投资260亿元。
+                            </p>
+                            <span>
+                                <a href="https://baike.baidu.com/item/%E9%87%8C%E8%BF%90%E6%B2%B3%E6%96%87%E5%8C%96%E9%95%BF%E5%BB%8A/18869709">
+                                    <p>>>>
+                                    </p>
+                                </a>
+                            </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="qinfen"><!--青峰峡森林公园-->
+                            <img src="水上森林公园.jfif">
+                            <h2>淮安水上森林公园</h2>
+                            <p>
+                                淮安市金湖水上森林，淮安市境内4A旅游景点。 [1]景区为省级水利风景区，占地1.2万亩，有“天然氧吧”之美誉，是华东地区首个集休闲度假、温泉养生、森林探险等功能于一体的大型森林旅游综合体。景区建有田园牧歌、树屋部落、清境江湖、活力森林、文创养生、水上迷宫等六大片区，分布着童话魔幻农场、五彩创意田园、树梢王国、玻璃栈道、水上嘉年华、杉杉迷宫、森林集市等数十个景点，并配套房车营地、树屋、森林之泉温泉酒店、水上餐厅等精品餐宿服务设施。
+                            </p>
+                            <span><a href="https://baike.baidu.com/item/%E6%B7%AE%E5%AE%89%E5%B8%82%E9%87%91%E6%B9%96%E6%B0%B4%E4%B8%8A%E6%A3%AE%E6%9E%97/63519525">
+                                    <p>>>></p>
+                                </a></span>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+ 
+ 
+    <div id="" class="footer">
+        <!--页尾-->
+        <img id="fi1" src="tupian/baoji1.jpg">
+        <p>
+            古城淮安 璀璨文明
+        </p>
+        <p>
+            welcome to huaian|淮安欢迎您！
+        </p>
+    </div>
+</body>
+ 
+</html>

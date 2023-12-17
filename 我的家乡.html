@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的家乡.html</title>
+    <link type="text/css" rel="stylesheet" href="我的家乡.css">
+</head>
+ 
+<body>
+    <div class="navbar">
+        <a href="#login"><button onclick="openModal3()">登录</button></a>
+        <a href="#news"><button onclick="openWebsite()">新闻资讯</button>  </a>
+        <a href="#contact"><button onclick="openModal()">联系我们</button>  </a>
+        <a href="#about"><button onclick="openModal2()">关于我们</button> </a>
+      </div>
+	  
+	    
+	    <div id="myModal" class="modal">  
+	      <div class="modal-content">  
+	        <h2>联系电话和邮箱</h2>  
+	        <p>电话：123-456-7890</p>  
+	        <p>邮箱：[example@example.com](mailto:example@example.com)</p>  
+	        <button onclick="closeModal()">关闭</button>  
+	      </div>  
+	    </div>  
+		
+		<div id="myModal2" class="modal2">  
+		    <div class="modal-content2">  
+		      <h2>Firefox Browser</h2>  
+		      <p>Firefox是最Firefox帮助公开且人人可用。</p>  
+		      <p>想支持我们吗？向我们捐款或者参与进来！</p>  
+		      <a href="https://donate.mozilla.org/en-US/?amount=10&amp;currency=USD&amp;desc=Firefox+Browser&amp;akid=CLFGRPOXUCDRNFE2B5G2AUSAHQ6Z7WQN7U&amp;zip=1234567890">捐款</a>  
+		      <p>许可信息最终用户权利隐私政策</p>  
+		      <button onclick="closeModal2()">关闭</button>  
+		    </div>  
+		  </div>  
+		  
+		  <div id="loginModal3" class="modal3">  
+		      <div class="modal-content3">  
+		        <h2>登录</h2>  
+		        <input type="text" id="username" placeholder="用户名">  
+		        <input type="password" id="password" placeholder="密码">  
+		        <button onclick="login()">登录</button>  
+		        <button onclick="closeModal3()">关闭</button>  
+		      </div>  
+		    </div>  
+		
+		<script>  
+		    function openModal() {  
+		      document.getElementById("myModal").style.display = "block";  
+		    }  
+		  
+		    function closeModal() {  
+		      document.getElementById("myModal").style.display = "none";  
+		    }  
+			function openModal2() {
+			  document.getElementById("myModal2").style.display = "block";  
+			}  
+					  
+			function closeModal2() {  
+			  document.getElementById("myModal2").style.display = "none";  
+			}  
+			function openModal3() {  
+			  document.getElementById("loginModal3").style.display = "block";  
+			}  
+			  
+			function closeModal3() {  
+			  document.getElementById("loginModal3").style.display = "none";  
+			}  
+			  
+			function login() {  
+			  var username = document.getElementById("username").value;  
+			  var password = document.getElementById("password").value; 
+			}
+			function openWebsite() {  
+			      window.open('http://news.ha101.cn/pc.html', '_blank');  
+			}  
+			
+		  </script>  
+	   
+    <div class="header">
+        <!--头部-->
+        <img id="hi1" src="淮安市4.jfif">
+    </div>
+ 
+    <div class="dh">
+        <!--导航栏 -->
+        <ul>
+            <li><a href="我的家乡.html#">首页</a></li>
+            <li><a href="家乡简介.html#">家乡简介</a></li>
+            <li><a href="风景名胜.html#">风景名胜</a></li>
+            <li><a href="美食特色.html#">美食特色</a></li>
+            <li><a href="站长简介.html#">站长简介</a></li>
+            <li><a href="在线调查.html#">在线调查</a></li>
+        </ul>
+    </div>
+    <div class="donghua">
+        <!--轮播-->
+        <div id="photo">
+            <img src="淮安市.jfif">
+            <img src="淮安市2.jfif">
+            <img src="淮安市3.jfif">
+            <img src="淮安市4.jfif">
+            <img src="淮安市5.jfif">
+        </div>
+    </div>
+    <div class="zhuti"><!--主体部分-->
+        <div class="zhuti">
+            <div id="zhuti-left"><!--主体左侧新闻部分-->
+                <table><!--新闻表格-->
+                    <tr>
+                        <img src="tupian/baoji3.png">
+                    </tr>
+                    <h4>淮安新闻</h4>
+                    <hr size="3" color="rgb(24, 24, 88)">
+                    <a href="http://fufeng.gov.cn/art/2022/5/13/art_47_1503593.html">
+                        <p>
+                            淮安旅游文化节盛大开幕
+
+淮安市，这片历史悠久、文化底蕴深厚的土地。文明淮安展新姿系列惠民演出、“逐梦小康，双节同庆”国庆文艺演出、白马湖摇滚音乐节以及盱眙天泉湖景区的2020“谧境天泉星空文化旅游周”等活动，让双节期间的淮安市充满了欢乐与热烈的气氛。
+
+                        </p>
+                    </a>
+                    </tr>
+ 
+ 
+ 
+                </table>
+            </div>
+ 
+ 
+ 
+            <div id="zhuti-right"><!--主体右侧部分-->
+                <table>
+                    <tr>
+                        <h4>淮安介绍</h4><!--文字介绍宝鸡-->
+                        <hr size="3" color="rgb(24, 24, 88)">
+                        <p>
+                            淮安市的历史可以追溯到6000年前，这里最早的先民们在此地留下了青莲岗文化。春秋战国时期，既有吴王夫差开凿的邗沟（即淮扬运河）沟通江、淮，又有陆上干道——善道通达南北。明清时期，境内置淮安府。管辖范围包括今江苏、安徽两省的长江以北广大地区。清末，一度设立江淮行省，淮安是江淮巡抚驻节之所，即省会所在地。淮安市历史悠久，历史可以追溯到公元前486年，境内有著名的水利工程——都江堰。历史上，淮安市曾经是漕运总督、南河总督的驻节地。
+                        </p>
+                        <p>
+                            
+                        </p>
+                    </tr>
+                    <tr>
+                        <br>
+                        <h4>主要风景</h4><!--滚动主要风景-->
+                        <hr size="3" color="rgb(24, 24, 88)">
+                        <marquee behavior="scroll" height="170px">
+                            <ul>
+                                <li><img src="1.webp"></li>
+                                <li><img src="2.webp"></li>
+                                <li><img src="3.webp"></li>
+                                <li><img src="淮安市西游乐园.jfif"></li>
+                                <li><img src="白马湖.jfif"></li>
+                                <li><img src="五岛湖.jfif"></li>
+                            </ul>
+                        </marquee>
+                        <hr size="3" color="rgb(24, 24, 88)">
+                    </tr>
+                </table>
+            </div>
+        </div>
+ 
+    </div>
+    <div id="" class="footer">
+        <!--页尾-->
+        <img id="fi1" src="tupian/baoji1.jpg"><!--尾页右下角图片-->
+        <p><!--尾页文字-->
+            古城淮安 璀璨文明
+        </p>
+        <p>
+            welcome to huaian||淮安欢迎您！
+        </p>
+    </div>
+</body>
+ 
+</html>

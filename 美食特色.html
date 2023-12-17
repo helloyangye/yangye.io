@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meishi</title>
+    <link type="text/css" rel="stylesheet" href="美食特色.css">
+</head>
+ 
+<body>
+    <div class="navbar">
+        <a href="javascript:void(0);" onclick="goToTargetPage()">首页</a>
+        <a href="#news"><button onclick="openWebsite()">新闻资讯</button>  </a>
+        <a href="#contact"><button onclick="openModal()">联系我们</button>  </a>
+        <a href="#about"><button onclick="openModal2()">关于我们</button> </a>
+      </div>
+	  
+	  <div id="myModal" class="modal">
+	    <div class="modal-content">  
+	      <h2>联系电话和邮箱</h2>  
+	      <p>电话：123-456-7890</p>  
+	      <p>邮箱：[example@example.com](mailto:example@example.com)</p>  
+	      <button onclick="closeModal()">关闭</button>  
+	    </div>  
+	  </div>  
+	  
+	  <div id="myModal2" class="modal2">  
+	      <div class="modal-content2">  
+	        <h2>Firefox Browser</h2>  
+	        <p>Firefox是最Firefox帮助公开且人人可用。</p>  
+	        <p>想支持我们吗？向我们捐款或者参与进来！</p>  
+	        <a href="https://donate.mozilla.org/en-US/?amount=10&amp;currency=USD&amp;desc=Firefox+Browser&amp;akid=CLFGRPOXUCDRNFE2B5G2AUSAHQ6Z7WQN7U&amp;zip=1234567890">捐款</a>  
+	        <p>许可信息最终用户权利隐私政策</p>  
+	        <button onclick="closeModal2()">关闭</button>  
+	      </div>  
+	    </div>  
+		
+		<script>
+				  function openModal() {
+				    document.getElementById("myModal").style.display = "block";  
+				  }  
+				  function closeModal() {  
+				    document.getElementById("myModal").style.display = "none";  
+				  }  
+				  
+				  function openModal2() {
+				    document.getElementById("myModal2").style.display = "block";  
+				  }    
+				  function closeModal2() {  
+				    document.getElementById("myModal2").style.display = "none";  
+				  }  
+				  
+				  function openWebsite() {  
+				        window.open('http://news.ha101.cn/pc.html', '_blank');  
+				  }  
+		    function goToTargetPage() {  
+		      window.location.href="我的家乡.html#"; // 替换为你要返回的页面的URL  
+		    }  
+		  </script>  
+    <div class="header">
+        <!--头部-->
+        <img id="hi1" src="美食图片.jfif">
+    </div>
+ 
+    <div class="dh">
+        <!--导航栏 -->
+        <ul>
+            <li><a href="我的家乡.html#">首页</a></li>
+            <li><a href="家乡简介.html#">家乡简介</a></li>
+            <li><a href="风景名胜.html#">风景名胜</a></li>
+            <li><a href="美食特色.html#">美食特色</a></li>
+            <li><a href="站长简介.html#">站长简介</a></li>
+            <li><a href="在线调查.html#">在线调查</a></li>
+        </ul>
+    </div>
+ 
+    <div class="zhuti">
+        <!--主体-->
+        <div id="zhutileft">
+            <div id="photo">
+                <img src="美食图片.jfif">
+                <img src="美食图片2.jfif">
+                <img src="美食图片3.jfif">
+                <img src="美食图片4.jfif">
+                <img src="美食图片5.jfif">
+            </div>
+        </div>
+        <div id="zhutimain">
+            <img src="淮扬菜.jfif">
+            <h4>
+                舌尖上的美食
+            </h4>
+            <a
+                href="https://post.smzdm.com/p/a78ekk4l/">
+                <p>
+                    淮安作为中国四大菜系-淮扬菜主要发源地，美食文化也非常丰富。淮扬菜选料严谨、因材施艺，制作精细、风格雅丽，追求本味、清鲜平和。其菜品细致精美，格调高雅。著名淮扬菜有清炖蟹粉狮子头、大煮干丝、蒲菜炖肉、软兜长鱼、松鼠鳜鱼等。还有许多淮安特色美食，著名的盱眙龙虾、涟水鸡糕、淮安盖浇面等出于淮安地区的涟水县和洪泽区......
+                </p>
+            </a>
+        </div>
+        <div id="zhutiright">
+            <ul>
+                <li>
+                    <div id="d1">美食排行榜</div>
+                </li>
+                <div id="d2">
+                    <hr size="3" color="gray">
+                    <li><a href="#">盱眙龙虾<span>[1]</span></a></li>
+                    <li><a href="#">软兜长鱼<span>[2]</span></a></li>
+                    <li><a href="#">钦工肉圆<span>[3]</span></a></li>
+                    <li><a href="#">涟水鸡糕<span>[4]</span></a></li>
+                    <li><a href="#">淮安盖浇面<span>[5]</span></a></li>
+                    <li><a href="#">淮安辣汤<span>[6]</span></a></li>
+                    <li><a href="#">蒲菜炖肉<span>[7]</span></a></li>
+                    <li><a href="#">酥脆茶馓<span>[8]</span></a></li>
+                    <li><a href="#">洪泽活鱼锅贴<span>[9]</span></a></li>
+                    <li><a href="#">朱桥甲鱼羹<span>[10]</span></a></li>
+            </ul>
+        </div>
+        <div id="bottom">
+            <div id="meishi1">
+                <img src="盱眙龙虾.jfif">
+                <h4>盱眙龙虾</h4>
+                <a href="https://baike.baidu.com/item/%E7%9B%B1%E7%9C%99%E9%BE%99%E8%99%BE">
+                    <p>盱眙龙虾的味道非常鲜美，肉质鲜嫩，口感细腻，使用多种调料和香料，如蒜泥、辣椒、生姜、葱等，激发出龙虾的鲜味，味道浓郁。烹饪方式采用多种烹饪方式如红烧、清蒸、爆炒等，每一种方式都能够呈现出不同的口感和味道...
+                    </p>
+                </a>
+            </div>
+            <div id="meishi2">
+                <img src="软兜长鱼.jfif">
+                <h4>软兜长鱼</h4>
+                <a href="https://baike.baidu.com/item/%E8%BD%AF%E5%85%9C%E9%95%BF%E9%B1%BC/955497">
+                    <p>软兜长鱼的味道非常鲜美，口感细腻，香气扑鼻，是淮扬菜中最负盛名的一道菜肴。淮安人厚待中外宾客最喜欢上这道“鲜嫩可口别具一格”的菜，让宾客尝鲜，赞口不绝。该菜的功效为补虚养生调理，气血双补调理，营养不良调理，产后恢复调理...
+                    </p>
+                </a>
+            </div>
+            <div id="meishi3">
+                <img src="钦工肉圆.jfif">
+                <h4>钦工肉圆</h4>
+                <a href="https://baike.baidu.com/item/%E9%92%A6%E5%B7%A5%E8%82%89%E5%9C%86/5463293">
+                    <p>属于淮扬菜系，是清代的著名“贡品”，所以又名清贡肉圆。它的制作已有千百年的历史，是江苏省十大名菜之一，光滑细嫩，色白汤浓，味道鲜美。民谣称赞曰：“钦工肉圆撂过墙，拾起还是圆又光；掉在地上跳几跳，吃到嘴里嫩又香。”...
+                    </p>
+                </a>
+            </div>
+            <div id="meishi4">
+                <img src="鸡糕.jfif">
+                <h4>涟水鸡糕</h4>
+                <a href="https://baike.baidu.com/item/%E6%B6%9F%E6%B0%B4%E9%B8%A1%E7%B3%95/2411041">
+                    <p>是涟水地区传统糕类特产。鸡糕细嫩，造形雅致，营养丰富，深受老人喜爱。制作鸡糕是以鸡胸脯肉为主料，配之以适量的鲜虾仁、鸡蛋、山药、豆粉、葱姜汁等辅料，加上十多种调味品制作而成。...
+                    </p>
+                </a>
+            </div>
+ 
+        </div>
+    </div>
+ 
+    <div id="" class="footer">
+        <!--页尾-->
+        <img id="fi1" src="tupian/baoji1.jpg">
+        <p>
+            古城淮安 璀璨文明
+        </p>
+        <p>
+            welcome to huaian|淮安欢迎您！
+        </p>
+    </div>
+</body>
+ 
+</html>

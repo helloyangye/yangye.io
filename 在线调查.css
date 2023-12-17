@@ -1,0 +1,180 @@
+* {
+    /*全局选择器*/
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .modal {
+        display: none; /* 初始状态为隐藏 */  
+        position: fixed; /* 固定位置 */  
+        z-index: 1; /* 在顶层 */  
+        padding-top: 100px; /* 距离顶部的位置 */  
+        left: 0;  
+        top: 0;  
+        width: 100%; /* 宽度全屏 */  
+        height: 100%; /* 高度全屏 */  
+        overflow: auto; /* 设置滚动条 */  
+        background-color: rgb(0,0,0); /* 黑色背景 */  
+        background-color: rgba(0,0,0,0.4); /* 黑色背景，半透明 */  
+      }  
+    
+      /* 弹窗内的内容样式 */  
+      .modal-content {  
+        background-color: #ddd;  
+        margin: auto;  
+        padding: 20px;  
+        border: 1px solid #888;  
+        width: 80%; /* 设置弹窗内容的宽度 */  
+      }
+  	  
+  	  .modal2 {
+  	        display: none; /* 初始状态为隐藏 */  
+  	        position: fixed; /* 固定位置 */  
+  	        z-index: 1; /* 在顶层 */  
+  	        padding-top: 100px; /* 距离顶部的位置 */  
+  	        left: 0;  
+  	        top: 0;  
+  	        width: 100%; /* 宽度全屏 */  
+  	        height: 100%; /* 高度全屏 */  
+  	        overflow: auto; /* 设置滚动条 */  
+  	        background-color: rgb(0,0,0); /* 黑色背景 */  
+  	        background-color: rgba(0,0,0,0.4); /* 黑色背景，半透明 */  
+  	      }  
+  	    
+  	      /* 弹窗内的内容样式 */  
+  	      .modal-content2 {  
+  	        background-color: #ddd;  
+  	        margin: auto;  
+  	        padding: 20px;  
+  	        border: 1px solid #888;  
+  	        width: 80%; /* 设置弹窗内容的宽度 */  
+  	      }
+ 
+body {
+    /*主体*/
+    color: rgb(0, 0, 0);
+    font-family: 楷体;
+    background-color: rgb(218, 202, 202);
+}
+ 
+.header {
+    /*头部*/
+    width: 100%;
+    height: 380px;
+}
+ 
+#hi1 {
+    /*头部图片*/
+    width: 100%;
+    height: 380px;
+}
+ 
+.dh ul {
+    /*导航栏*/
+    margin-bottom: 30px;
+    padding: 0px;
+    width: 1440px;
+    height: 30px;
+}
+ 
+.dh ul li {
+    /*导航栏列表*/
+    height: 30px;
+    width: 16.45%;
+    list-style: none;
+    /*列表样式无*/
+    float: left;
+    /*左浮动*/
+    display: inline;
+    /*行内显示*/
+    font: 0.9em;
+}
+ 
+.dh ul li a {
+    /*导航栏超链接*/
+    text-align: center;
+    /*文本居中*/
+    color: white;
+    width: 100%;
+    font-size: larger;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(87, 156, 241);
+    line-height: 40px;
+    border-bottom: 1px solid rgb(168, 164, 172);
+}
+ 
+.dh ul li a:hover {
+    /*鼠标划过时*/
+    color: rgb(0, 0, 0);
+    background-color: rgb(37, 84, 155);
+    border-bottom: 3px solid rgb(16, 4, 28);
+}
+ 
+.footer {
+    /*尾部*/
+    margin-top: 10px;
+    clear: both;
+    /*清除浮动*/
+    width: 100%;
+    height: 70px;
+    background-color: rgb(87, 156, 241);
+    color: rgb(28, 41, 99);
+    font: italic 14px/20px 宋体;
+    /*字体设置*/
+    text-align: center;
+}
+ 
+.footer p {
+    /*尾部段落*/
+    margin-top: 10px;
+}
+ 
+#fi1 {
+    /*尾部图片*/
+    width: 100px;
+    height: 70px;
+    float: right;
+    padding: 0px;
+}
+ 
+#main {
+    /*主体内容设置*/
+    font-size: large;
+    color: rgb(6, 2, 69);
+    margin: 30px 300px 30px 300px;
+}
+ 
+#tijiao {
+    /*提交按钮*/
+    margin-top: 20px;
+    text-align: center;
+}
+ 
+#tijiao input {
+    width: 100px;
+    height: 35px;
+    background-color: rgb(99, 150, 134);
+}
+ 
+fieldset {
+    /*定义域设置*/
+    padding: 20px;
+}
